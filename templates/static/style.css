@@ -1,0 +1,111 @@
+/* Mengatur tampilan latar belakang dan font */
+body {
+  background-image: url("fruit_background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Verdana, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Container utama */
+.container {
+  background-color: rgba(240 248 255 / 85%); /* Soft blue */
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 8px 25px rgba(0 0 0 / 15%);
+  position: relative;
+  z-index: 1px;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+/* Judul halaman */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3498db; /* Biru segar */
+  margin-bottom: 20px;
+}
+
+/* Placeholder untuk ikon cloud */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #3498db; /* Warna biru */
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: rgba(224 247 255 / 85%); /* Biru sangat terang */
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk ikon cloud */
+.cloud-icon {
+  width: 100px;
+  opacity: 0.85;
+}
+
+/* Gaya untuk pratinjau gambar */
+#uploaded-image {
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #3498db; /* Biru segar */
+  margin-top: 20px;
+  object-fit: contain;
+  background-color: rgba(240 248 255 / 49.3%); /* Soft blue transparan */
+  border-radius: 10px;
+}
+
+/* Tombol upload */
+.upload-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Hasil prediksi */
+.result {
+  font-size: 1.2em;
+  background-color: rgba(52 152 219 / 10%); /* Biru transparan lembut */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #3498db;
+  text-align: center;
+}
+
+/* Fruits kiri dan kanan di bagian bawah */
+.fruits-container {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.fruits {
+  width: 160px;
+  margin: 0 20px;
+  filter: drop-shadow(0 4px 4px rgba(0 0 0 / 20%));
+}
