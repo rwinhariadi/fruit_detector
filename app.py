@@ -16,7 +16,7 @@ logging.basicConfig(
 
 # Path model
 base_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(base_dir, "model_buah.h5")
+model_path = os.path.join(base_dir, "best_model.h5")
 
 # Load model yang sudah dilatih
 logging.info("Loading model...")
